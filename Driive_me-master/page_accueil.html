@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        body {
+            background-color: #FFFFFF;
+            background-image: url("http://klowner.com/wallery/pleiades/download/Pleiades_8x5.svg");
+            color: #ffffff;
+            margin: 0 auto;
+            padding: 0px;
+            display: flex;
+            justify-content: center;
+            font-family: Lato, sans-serif;
+        }
+        
+        h1 {
+            font-size: 50px;
+            text-align: center;
+            color: #00FF00;
+        }
+        
+        .plannet_terre {
+            width: 100px;
+            height: 100px;
+        }
+        
+        p {
+            text-align: center;
+            font-weight: 900;
+            line-height: -10px;
+        }
+        
+        ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+        
+        a {
+            text-decoration: none;
+            padding: 20px;
+            color: #ffffff;
+        }
+        
+        a:hover {
+            font-weight: 900;
+            font-size: 20px;
+            color: #00FF00;
+        }
+        
+        .geek {
+            display: flex;
+            justify-content: center;
+        }
+        
+        .geek>img {
+            height: 350px;
+            width: 80%;
+            margin-bottom: 4px;
+        }
+        /* ######### */
+        
+        @keyframes monAnimation {
+            0% {
+                width: 50px;
+                height: 50px;
+                background-color: red;
+                top: 5;
+                right: 0;
+            }
+            25% {
+                width: 50px;
+                height: 50px;
+                border-radius: 100%;
+                background-color: Orange;
+                top: 0;
+                right: 30%;
+            }
+            50% {
+                width: 50px;
+                height: 50px;
+                background-color: #00FF00;
+                top: 30px;
+                right: 30%;
+            }
+            75% {
+                width: 50px;
+                height: 50px;
+                background-color: Cyan;
+                top: 30px;
+                right: 0;
+            }
+            80% {
+                width: 50px;
+                height: 50px;
+                background-color: Blue;
+                top: 0;
+                right: 0;
+            }
+            85% {
+                width: 50px;
+                height: 50px;
+                background-color: #00FF00;
+                top: 0%;
+                right: 0%;
+            }
+            100% {
+                width: 50px;
+                height: 50px;
+                background-color: Black;
+                top: 5%;
+                right: 5%;
+            }
+        }
+        
+        section.container .aAnimer {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            margin: 0;
+            position: relative;
+            animation-name: monAnimation;
+            /*Lien vers le keyframes et le nom de l'animation*/
+            animation-duration: 5s;
+            /*Le temps de l'animation total */
+            animation-timing-function: cubic-bezier(1, 0, 0, 1);
+            /* appuyer sur "c" cubix de bézier c'est la vitesse*/
+            animation-iteration-count: infinite;
+            /*répétion infiny ou mettre une valeur exemple 10 fois il se repete*/
+        }
+    </style>
+    <header>
+        <h1>BIENVENUS DANS MON INSTANCE</h1>
+        <center>
+            <img src="http://sklyarov.studio/img/works/sites/alfa-bank/space/earth.png" alt="Plannete terre" class="plannet_terre" />
+        </center>
+        <p>Naviguez dans les plus profond mocheter du web</p>
+        <ul>
+            <li><a href="projet/html/index.html" title="">Driive me</a></li>
+            <li><a href="projet/formulaire/formulaire_solo/formulaire.html" title="Formulaire">Formulaire</a></li>
+            <li><a href="../espace_de_travail/test/html/index.html" title="Espace de travail">Espace de travail test</a></li>
+            <li><a href="TP/css_animation/css_animation.html" title="Animation">Animation</a></li>
+            <li><a href="simplon_class_formateur/promo3-blog-design/index.html" title="page-design">Lolcat</a></li>
+            <li><a href="simplon_class_formateur/promo3-html-css/menu-deroulant.html" title="Menu déroulant">Menu déroulant</a></li>
+        </ul>
+        <section class="geek">
+            <img src="https://media.giphy.com/media/ZVik7pBtu9dNS/giphy.gif" alt="Un geek sur son pc" />
+        </section>
+    </header>
+
+    <section class="container">
+        <div class="aAnimer"></div>
+        <section>
+</body>
+
+</html>

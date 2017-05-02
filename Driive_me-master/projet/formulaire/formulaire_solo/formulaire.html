@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulaire d'inscription</title>
+    <link rel="stylesheet" href="styles/formulaire.css">
+
+</head>
+
+<body>
+    <h1>Inscription</h1>
+    <!-- Dans l'absolu il faudrait plutôt mettre du POST mais là on met
+    du GET pour voir les trucs qu'on envoie
+    Et dans l'absolu de l'absolu il faudrait envoyer ça vers un langage
+    serveur et pas vers un .html  -->
+    <form class="formulaire" action="index.html" method="GET">
+        <fieldset>
+            <label for="nom">Nom : </label>
+            <input type="text" name="nom" id="nom">
+        </fieldset>
+
+        <fieldset>
+            <label for="prenom">Prénom : </label>
+            <input type="text" name="prenom" id="prenom">
+        </fieldset>
+        <fieldset>
+            <label for="age">Âge : </label>
+            <input type="number" name="age" id="age" min="0">
+        </fieldset>
+
+        <fieldset>
+            <label for="region">Région : </label>
+            <select name="region" id="region">
+                <option>Nord</option>
+                <option>Centre</option>
+                <option>Sud</option>
+                <option>Est</option>
+                <option>Ouest</option>
+                <option>DOM TOM</option>
+            </select>
+
+        </fieldset>
+        <fieldset>
+            <label for="email">Email : </label>
+            <input type="email" name="email" id="email">
+        </fieldset>
+        <fieldset>
+            <label for="mdp">Mot de Passe : </label>
+            <input type="password" name="mdp" id="mdp">
+        </fieldset>
+        <fieldset>
+            <label for="sexe">Sexe : </label>
+            <ul id="sexe">
+                <!-- un input type radio devra avoir une value pour indiquer 
+            quelle valeur envoyer dans la requête.
+            Ils devront également avoir le même name si ils doivent être liés
+            ensembles (faire qu'un seul puisse être coché à la fois) -->
+                <li><label for="male">Homme</label><input id="male" value="male" name="sexe" type="radio"></li>
+                <li><label for="female">Femme</label><input id="female" value="female" name="sexe" type="radio"></li>
+                <li><label for="autre">Autre</label><input id="autre" value="autre" name="sexe" type="radio"></li>
+                <li><label for="non-normatif">Non Normatif</label><input id="non-normatif" value="non-normatif" name="sexe" type="radio"></li>
+            </ul>
+        </fieldset>
+        <button>Envoyer</button>
+
+    </form>
+
+</body>
+
+</html>

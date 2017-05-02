@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../style/style.css" />
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        ul li { /* llst sans style. marge ext et inter par default.*/
+            margin: 0px;
+            padding: 0px;
+            list-style: none;
+            text-align: center;
+        }
+        .menu .categorie { /*Largeur hauteur des li*/
+            width: 150px;
+            height: 30px;
+            line-height: 30px;
+        }
+        .menu { /*Element parent des li en flex*/
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .categorie:hover {
+            color : #ffffff;
+            background-color: #000000;
+        }
+
+/* ################################# */
+        .sous_menu {
+            display: none;
+            
+        }
+
+        .categorie:hover .sous_menu { /*le display: inherit annule le display: none 
+        du sous_menu qui se trouve dans la categorie:hover en train d'être survoler
+         et le display block lui indique qui seras block et dont le remplace et n'est
+          donc pas pris en compte.*/
+            display: block;
+            color: #ffffff;
+            background-color: #000000;
+            padding: 10px;
+            width: 150px;
+            height: 30px;
+            line-height: 30px;
+        }
+
+        .categorie>ul {
+            position: absolute;
+            left: 130px;
+        }
+
+        .categorie .sous_menu:hover {
+            color: green;
+        }
+        
+    </style>
+  <main>
+    <ul class="menu">
+        <li class="categorie">categorie 1
+            <ul>
+                <li class="sous_menu">sous_menu 1</li>
+                <li class="sous_menu">sous_menu 2</li>
+                <li class="sous_menu">sous_menu 3</li>
+            </ul>
+        </li>
+        <li class="categorie">categorie 2
+            <ul>
+                <li class="sous_menu">sous-menu 1</li>
+                <li class="sous_menu">sous-menu 2</li>
+                <li class="sous_menu">sous-menu 3</li>
+            </ul>
+        </li>
+        <li class="categorie">categorie 3
+            <ul>
+                <li class="sous_menu">sous-menu 1</li>
+                <li class="sous_menu">sous-menu 2</li>
+                <li class="sous_menu">sous-menu 3</li>
+            </ul>
+        </li>
+    </ul>
+  </main>
+
+
+</body>
+</html>

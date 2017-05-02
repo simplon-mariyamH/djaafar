@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../style/style.css" type="text/css" />
+    <title>Document</title>
+</head>
+
+<!-- 
+
+  ÛÛÛÛÛÛÛÛÛ  ÛÛÛÛÛ ÛÛÛÛÛÛ   ÛÛÛÛÛÛ ÛÛÛÛÛÛÛÛÛÛÛ  ÛÛÛÛÛ          ÛÛÛÛÛÛÛ    ÛÛÛÛÛÛ   ÛÛÛÛÛ
+ ÛÛÛ°°°°°ÛÛÛ°°ÛÛÛ °°ÛÛÛÛÛÛ ÛÛÛÛÛÛ °°ÛÛÛ°°°°°ÛÛÛ°°ÛÛÛ         ÛÛÛ°°°°°ÛÛÛ °°ÛÛÛÛÛÛ °°ÛÛÛ 
+°ÛÛÛ    °°°  °ÛÛÛ  °ÛÛÛ°ÛÛÛÛÛ°ÛÛÛ  °ÛÛÛ    °ÛÛÛ °ÛÛÛ        ÛÛÛ     °°ÛÛÛ °ÛÛÛ°ÛÛÛ °ÛÛÛ 
+°°ÛÛÛÛÛÛÛÛÛ  °ÛÛÛ  °ÛÛÛ°°ÛÛÛ °ÛÛÛ  °ÛÛÛÛÛÛÛÛÛÛ  °ÛÛÛ       °ÛÛÛ      °ÛÛÛ °ÛÛÛ°°ÛÛÛ°ÛÛÛ 
+ °°°°°°°°ÛÛÛ °ÛÛÛ  °ÛÛÛ °°°  °ÛÛÛ  °ÛÛÛ°°°°°°   °ÛÛÛ       °ÛÛÛ      °ÛÛÛ °ÛÛÛ °°ÛÛÛÛÛÛ 
+ ÛÛÛ    °ÛÛÛ °ÛÛÛ  °ÛÛÛ      °ÛÛÛ  °ÛÛÛ         °ÛÛÛ      Û°°ÛÛÛ     ÛÛÛ  °ÛÛÛ  °°ÛÛÛÛÛ 
+°°ÛÛÛÛÛÛÛÛÛ  ÛÛÛÛÛ ÛÛÛÛÛ     ÛÛÛÛÛ ÛÛÛÛÛ        ÛÛÛÛÛÛÛÛÛÛÛ °°°ÛÛÛÛÛÛÛ°   ÛÛÛÛÛ  °°ÛÛÛÛÛ
+ °°°°°°°°°  °°°°° °°°°°     °°°°° °°°°°        °°°°°°°°°°°    °°°°°°°    °°°°°    °°°°° 
+
+ -->
+<!-- ################################################################################ -->
+
+<body>
+    <header>
+        <div class="container_header">
+            <!-- logo du site a placer en haut a gauche -->
+            <a href="#" title="Accueil"><img src="http://www.driiveme.com/Images/logo-driiveme.svg" alt="logo driive me" id="logo_driive_me" /></a>
+            <!-- faire le logo en svg -->
+
+            <ul class="nav_bar_header">
+                <li><a href="#" class=nav_bar_header_li>S'inscrire</a></li>
+                <li><a href="#" class=nav_bar_header_li>connecter</a></li>
+                <li><a href="#" class=nav_bar_header_li>Aide</a></li>
+                <li><a href="#" class=nav_bar_header_li>Rechercher une location</a></li>
+                <li>
+                    <a href="#" class=nav_bar_header_li><img src="http://www.driiveme.com/Images/flag/flag-FR.png" alt="Drapeau de france" title="Langue" /></a>
+                    <!--
+                        <select class="navbar_header_select" onchange="location = this.option[this.selectIndex].value"> 
+                        <option value="../style/style.css"><img src="http://www.driiveme.com/Images/flag/flag-FR.png" alt="Drapeau de france" title="Langue" /></option>
+                        <option value=""><img src="http://www.driiveme.com/Images/flag/flag-FR.png" alt="Drapeau de france" title="Langue" /></option>
+                        <option value=""><img src="http://www.driiveme.com/Images/flag/flag-FR.png" alt="Drapeau de france" title="Langue" /></option>
+                    </select>
+                    -->
+                </li>
+                <li><a href="#" class=nav_bar_header_li>Un véhicule à d&eacute;placer ?</a></li>
+            </ul>
+        </div>
+    </header>
+    <section class="container_find">
+        <h1>LOUER UNE VOITURE
+            <br />
+            <span>EN ALLER SIMPLE POUR 1 EURO</span>
+        </h1>
+
+        <h3>Les loueurs doivent rapatrier leurs véhicules,
+            <span>Faites-le pour 1 euro!</span>
+        </h3>
+
+        <section class="find">
+            <section class="find_A">
+                <p>
+                    <form class="formulaire_form" action="../formulaire/formulaire.html" method="GET">
+                        <fielset>
+                            <label for="lieu">
+                                <img src="http://www.driiveme.com/Images/icon-pin-departure.png" alt="Lettre A couleur vert" />
+                            <span class="formulaire_span_A">Ville de départ</span><label>
+                            <input class="formulaire_input" name="lieu" id="lieu" />
+                        </fielset>
+                    </form>
+                    </p>
+            </section>
+
+            <section class="find_B">
+                <p>
+                    <form class="formulaire_form" action="../formulaire/formulaire.html" method="GET">
+                        <fielset>
+                            <label for="lieu">
+                                <img src="http://www.driiveme.com/Images/icon-pin-destination.png" alt="Lettre B couleur rouge" />    
+                            <span class="formulaire_span_B">Ville d'arrivée</span> <label>
+                            <input class="formulaire_input" name="lieu" id="lieu" />
+                        </fielset>
+                    </form>
+                </p>
+                
+            </section>
+            <section class="find_location">
+                <p>
+                    <a href="http://www.driiveme.com/rechercher-trajet.html?actionForm=search-trajet&cityDeparture=&cityDepartureId=&cityDepartureSave=&cityDestination=&cityDestinationId=&cityDestinationSave=" title="Rechercher">RECHERCHER LOCATION</a></p>
+            </section>
+        </section>
+
+        <section class="container_image">
+            <img src="http://www.driiveme.com/Images/hero-skyline.png" alt="Batiment gris" class="container_building"/>
+            <img src="http://www.driiveme.com/Images/hero-car-group.png" alt="voiture et camion" class="container_car"/>
+        </section>
+        <section class="container_imageAB">
+            <img src="http://www.driiveme.com/Images/hero-pins.png" alt="big point A and B" class="container_bigAB" />
+            <img src="http://www.driiveme.com/Images/hero-pins.png" alt="big point A and B" class="container_bigAB" />
+        </section>
+        <section class="container_footer">
+            <p>Locations assurées par <img src="http://www.driiveme.com/Images/logo-allianz-gray.png" alt="logo Alliance"/p>
+        </section>
+        <section class="container_deroulant">
+            <h2>
+                LES LOCATIONS DE DERNIÈRES MINUTES<br />
+                <span class="border_line_h2">_____________</span>
+            </h2>
+            <div class="container_deroulant_inline1"></div>
+            <div class="container_deroulant_inline2"></div>
+            <div class="container_deroulant_inline3"></div>
+            <div class="container_deroulant_inline4"></div>
+        </section>
+    </section>
+
+    
+
+</body>
+<!-- ################################################################################ -->
+
+</html>

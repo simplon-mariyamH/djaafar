@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<style>
+    @keyframes monAnimation {
+        0% {
+            width:100px;
+            height: 100px;
+            background-color: red;
+            top: 0;
+            left: 0;
+        } 
+        25% {
+            width:100px;
+            height: 100px;
+            border-radius: 100%;
+            background-color: Orange;
+            top: 0;
+            left: 90%;
+        }
+        50% {
+            width: 300px;
+            height: 300px;
+            background-color: Yellow;
+            top: 400px;
+            left: 90%;
+        }
+
+        75% {
+            width: 50px;
+            height: 200px;
+            background-color: Cyan;
+            top: 400px;
+            left: 0;
+        }
+
+        80%{
+            width: 50px;
+            height: 200px;
+            background-color: Blue;
+            top: 0;
+            left: 0;
+        }
+        85%{
+            width: 50px;
+            height: 200px;
+            background-color: Green;
+            top: 0%;
+            left: 0%;
+            
+        }
+        100% {
+            width: 100px;
+            height: 100px;
+            background-color: Black;
+            top: 0%;
+            left: 0%;
+        }
+    }
+
+
+
+    section.container .aAnimer {
+        width:100px;
+        height: 100px;
+        background-color: red;
+        margin: 0;
+        position: relative;
+        animation-name: monAnimation; /*Lien vers le keyframes et le nom de l'animation*/ 
+        animation-duration: 5s; /*Le temps de l'animation total */
+        animation-timing-function: cubic-bezier(1, 0, 0, 1); /* appuyer sur "c" cubix de bézier c'est la vitesse*/
+        animation-iteration-count: infinite; /*répétion infiny ou mettre une valeur exemple 10 fois il se repete*/
+    }   
+</style>
+
+    <section class="container">
+        <div class="aAnimer"></div>
+    <section>
+
+</body>
+</html>

@@ -1,0 +1,502 @@
+/*
+
+ ██████╗███████╗███████╗
+██╔════╝██╔════╝██╔════╝
+██║     ███████╗███████╗
+██║     ╚════██║╚════██║
+╚██████╗███████║███████║
+ ╚═════╝╚══════╝╚══════╝
+
+*/
+
+
+/* RESET DU BODY */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    font-family: "Century Gothic", Helvetica, Arial, sans-serif;
+}
+
+
+/*Header*/
+
+header {
+    height: 15vh;
+    width: 100%;
+    background-color: #ffffff;
+}
+
+
+/*Container_header*/
+
+.container_header {
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+    max-width: 100%;
+    z-index: 1;
+}
+
+
+/*Logo driive me header*/
+
+header #logo_driive_me {
+    height: 40%;
+    width: 100%;
+    margin-left: -15%;
+    margin-top: 7px;
+}
+
+
+/*Navigation*/
+
+ul.nav_bar_header {
+    height: 100%;
+    width: auto;
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    margin-top: 20px;
+    z-index: 1;
+}
+
+.nav_bar_header_select {
+    max-width: none;
+}
+
+.nav_bar_header_select img {
+    vertical-align: middle;
+}
+
+.nav_bar_header a {
+    text-decoration: none;
+    padding: 0px 5px 0px 5px;
+    margin-left: 30px;
+    color: rgb(51, 54, 59);
+}
+
+.nav_bar_header a:hover {
+    color: #000000;
+    font-weight: 0;
+    background-color: lightgray;
+    padding: 30px;
+}
+
+.nav_bar_header img {
+    margin: -5px 25px -6px 0px;
+}
+
+
+/* ######################################################################################## */
+
+.container_find {
+    /*Bloc de recherche sur fonf bleu ciel*/
+    height: 420px;
+    width: auto;
+    background-image: url("http://www.driiveme.com/Images/hero-bg.png");
+    margin-top: -46px;
+    align-items: center;
+    z-index: 2;
+    position: relative;
+    /*la position est necessaire pour que le nav ne soit pas sur le bloc container (lien z-ondex)*/
+}
+
+h1 {
+    color: #ffffff;
+    font-weight: 900;
+    text-align: center;
+    text-height: 10px;
+    padding-top: 70px;
+    font-size: 40px;
+}
+
+.container_find h1 span {
+    text-transform: uppercase;
+    color: #333333;
+    font-size: 35px;
+}
+
+.container_find h3 {
+    color: #333333;
+    text-align: center;
+    font-size: 19px;
+    line-height: 40px;
+}
+
+.container_find h3 span {
+    font-weight: 900;
+    color: #000000;
+}
+
+.formulaire_input {
+    border: none;
+}
+
+.formulaire_form .formulaire_span_A {
+    color: #AAAAAA;
+}
+
+.formulaire_form .formulaire_span_B {
+    color: #AAAAAA;
+}
+
+
+/*
+On commence par annuler les styles
+des ul et li dans le form
+*/
+
+.find {
+    width: 58%;
+    height: 4em;
+    background-color: #6595AC;
+    margin: 0 auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2px;
+}
+
+.find_A {
+    width: 31%;
+    height: 3em;
+    background-color: #ffffff;
+    padding: 1px;
+    margin-left: 0%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 2px;
+}
+
+.find_A img {
+    background: no-repeat;
+    margin-left: 2%;
+}
+
+.find_A p {
+    background: no-repeat;
+    margin-left: 2%;
+    color: #AAAAAA;
+}
+
+.find_B {
+    width: 31%;
+    height: 3em;
+    background-color: #ffffff;
+    padding: 1px;
+    margin-left: 3%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 2px;
+}
+
+.find_B img {
+    background: no-repeat;
+    margin-left: 2%;
+}
+
+.find_B p {
+    background: no-repeat;
+    margin-left: 2%;
+    color: #AAAAAA;
+}
+
+.find_location {
+    width: 31%;
+    height: 3em;
+    padding: 1px;
+    margin-left: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ED5153;
+    border-radius: 2px;
+}
+
+.find_location p {
+    color: #ffffff;
+    background-color: #ED5153;
+}
+
+.find_location a {
+    color: #ffffff;
+    list-style: none;
+    text-decoration: none;
+    padding: 18px;
+}
+
+.container_image {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container_building {
+    margin: 0 auto;
+    margin-top: -2%;
+}
+
+.container_car {
+    margin: 0 auto;
+    margin-top: -3%;
+}
+
+.container_imageAB {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.container_bigAB {
+    margin-left: 2%;
+    margin-top: -6%;
+}
+
+.container_bigAB {
+    margin-left: 2%;
+    margin-top: -6%;
+}
+
+.container_footer {
+    height: 8em;
+    width: 100%;
+    background-color: #33363B;
+    margin-top: -3%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-left: 0%;
+}
+
+.container_footer p {
+    color: #7F838A;
+}
+
+
+/* ######################################################################################## */
+
+.container_deroulant {
+    width: 100%;
+    height: 35em;
+    background-color: #F2F2F2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container_deroulant h2 {
+    font-weight: 900;
+    color: #000000;
+    margin-top: -23%;
+    font-size: 25px;
+}
+
+.border_line_h2 {
+    color: #7F838A;
+    margin-left: 30%;
+}
+
+.container_deroulant_inline1 {
+    width: 35%;
+    height: 10em;
+    background-color: #ffffff;
+    padding: 0px;
+    margin-left: -36%;
+}
+
+.container_deroulant_inline2 {
+    width: 35%;
+    height: 10em;
+    background-color: #ffffff;
+    padding: 0px;
+    margin-left: -36%;
+}
+
+.container_deroulant_inline3 {
+    width: 35%;
+    height: 10em;
+    background-color: #ffffff;
+    padding: 0px;
+    margin-left: -36%;
+}
+
+.container_deroulant_inline4 {
+    width: 35%;
+    height: 10em;
+    background-color: #ffffff;
+    padding: 0px;
+    margin-left: -36%;
+}
+
+
+/*Responsive adapter a tout les écrans // mettre la règle // @media query // 
+
+Rappel : https://openclassrooms.com/courses/apprenez-a-creer-votre-site-web-avec-html5-et-css3/mise-en-page-adaptative-avec-les-media-queries
+
+
+Les règles disponibles principal :
+
+color : gestion de la couleur (en bits/pixel).
+height : hauteur de la zone d'affichage (fenêtre).
+width : largeur de la zone d'affichage (fenêtre).
+device-height : hauteur du périphérique.
+device-width : largeur du périphérique.
+orientation : orientation du périphérique (portrait ou paysage).
+media : type d'écran de sortie. Quelques-unes des valeurs possibles :
+screen : écran « classique » ;
+handheld : périphérique mobile ;
+print : impression ;
+tv : télévision ;
+projection : projecteur ;
+all : tous les types d'écran. */
+
+
+/* Sur les écrans, quand la largeur de la fenêtre fait au maximum 1280px */
+
+@media screen and (max-width: 700px) {
+    /* Si la largeur est < / = 700px*/
+    /*Pour le navbar*/
+    ul {
+        display: none;
+    }
+    li {
+        display: none;
+    }
+    nav {
+        padding: 7px;
+    }
+    .navbar_select {
+        display: block;
+        height: 30px;
+        width: auto;
+        justify-content: center;
+        align-items: flex start;
+    }
+}
+
+*/ @media all and (max-device-width: 480px) {
+    /*Concerne les mobiles*/
+}
+
+
+/* Sur tous types d'écran, quand la largeur de la fenêtre est comprise entre 1024px et 1280px */
+
+@media all and (min-width: 1024px) and (max-width: 1280px) {
+    /*Concernet les ecrans de type pc*/
+}
+
+
+/* Sur les téléviseurs */
+
+@media tv {}
+
+
+/* Sur tous types d'écrans orientés verticalement */
+
+@media all and (orientation: portrait)
+/*Les mobiles :
+Navigateur
+Largeur du viewport par défaut
+
+Opera Mobile
+850 pixels
+iPhone Safari
+980 pixels
+Android
+800 pixels
+Windows Phone
+1024 pixels
+
+Un iPhone se comporte comme si la fenêtre faisait 980 px de large, tandis qu'un Android se comporte comme si la fenêtre faisait 800 px !
+Pour cibler les smartphones, plutôt que d'utiliser max-width, il peut être intéressant de recourir à max-device-width : c'est la largeur du périphérique. Les périphériques mobiles ne dépassant pas 480 px de large, on pourra viser uniquement les navigateurs mobiles avec cette media query :
+                
+                ########################################################################################
